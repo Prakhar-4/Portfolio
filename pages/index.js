@@ -1,131 +1,98 @@
-import Head from 'next/head';
-import styles from '../styles/Home.module.css';
+import Head from "next/head";
+import Layout, { siteTitle } from "../components/layout.js";
+import utilStyles from "../styles/utils.module.css";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <Layout home>
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>{siteTitle}</title>
       </Head>
-
-      <main>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing <code>pages/index.js</code>
+      <section className={utilStyles.headingMd}>
+        <h1>About Me</h1>
+        <p>
+          I'm Prakhar Grover, a passionate 2nd year B.Tech Computer Science
+          student at SRM Institute of Science and Technology with my
+          specialization in Cloud Computing, eager to explore the ever-evolving
+          world of technology. My interests lie in software development, quantum
+          computing, and cybersecurity.
         </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
+        <p>
+          I actively seek out new challenges and thrive on collaborative
+          projects that enhance my problem-solving abilities. Beyond coding, I
+          stay abreast of the latest tech trends and have recently been diving
+          into the exciting realm of Web3. I am determined to leverage my skills
+          and knowledge to make a significant contribution to the dynamic
+          digital landscape.
+        </p>
+        <p>My interests include online gaming, cricket and music.</p>
+        <h1>My Socials</h1>
+        <p>
+          <a href="https://github.com/Prakhar-4" target="_blank">
+            Github @Prakhar-4
           </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
+        </p>
+        <p>
+          <a href="http://www.linkedin.com/in/prakhar04" target="_blank">
+            Linkedin @prakhar04
           </a>
-
+        </p>
+        <p>
+          <a href="https://devfolio.co/@prakhar_4" target="_blank">
+            Devfolio @prakhar_4
+          </a>
+        </p>
+        <p>
+          <a href="https://www.hackerrank.com/profile/pg6359" target="_blank">
+            HackerRank @pg6359
+          </a>
+        </p>
+        <h1>Projects</h1>
+        <p>
           <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
+            href="https://github.com/vinay-04/unfold-precompile-evm"
+            target="_blank"
           >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
+            ZkSnark Precompile
           </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
+        </p>
+        <p>A ZkSnark based precompile for the Avalanche network</p>
+        <p>
+          <a href="https://github.com/Prakhar-4/pet-store-api" target="_blank">
+            Pet Store API
           </a>
-        </div>
-      </main>
-
-      <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel" className={styles.logo} />
-        </a>
-      </footer>
-
-      <style jsx>{`
-        main {
-          padding: 5rem 0;
-          flex: 1;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
-        footer {
-          width: 100%;
-          height: 100px;
-          border-top: 1px solid #eaeaea;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-        footer img {
-          margin-left: 0.5rem;
-        }
-        footer a {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          text-decoration: none;
-          color: inherit;
-        }
-        code {
-          background: #fafafa;
-          border-radius: 5px;
-          padding: 0.75rem;
-          font-size: 1.1rem;
-          font-family:
-            Menlo,
-            Monaco,
-            Lucida Console,
-            Liberation Mono,
-            DejaVu Sans Mono,
-            Bitstream Vera Sans Mono,
-            Courier New,
-            monospace;
-        }
-      `}</style>
-
-      <style jsx global>{`
-        html,
-        body {
-          padding: 0;
-          margin: 0;
-          font-family:
-            -apple-system,
-            BlinkMacSystemFont,
-            Segoe UI,
-            Roboto,
-            Oxygen,
-            Ubuntu,
-            Cantarell,
-            Fira Sans,
-            Droid Sans,
-            Helvetica Neue,
-            sans-serif;
-        }
-        * {
-          box-sizing: border-box;
-        }
-      `}</style>
-    </div>
+        </p>
+        <p>
+          A simple api to perform CRUD operation using FastAPI and firebase
+          realtime database for a pet-store.
+        </p>
+        <h1>Hackathons</h1>
+        <p>
+          I thoroughly enjoy taking part in hackathons. They provide an
+          excellent opportunity to quickly acquire knowledge about emerging
+          technologies and, of course, connect with fellow individuals who share
+          similar interests.
+        </p>
+        <p>
+          I participated in a few hackathons during my 3rd semester and gained
+          valuable knowledge including my last hackathon
+        </p>
+        <p>
+          <a href="https://unfoldweb3.com/#home">Unfold 2023</a> and our team
+          won{" "}
+          <a href="https://x.com/Avalanche_In/status/1717543567571464642?s=20">
+            3rd Position
+          </a>{" "}
+          in the Avalanche Track and won $1000 as the prize amount.
+        </p>
+        <h1>Academics</h1>
+        <p>Semester wise GPA</p>
+        <p>Semester 1: 10</p>
+        <p>Semester 2: 10</p>
+        <h2></h2>
+        <h4>Contact me</h4>
+        <p>prakhar.grover04@gmail.com</p>
+      </section>
+    </Layout>
   );
 }
